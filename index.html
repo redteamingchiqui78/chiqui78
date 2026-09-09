@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CHIQUI_78 — Independent Red Team Security Researcher. Authorized vulnerability research across web applications, APIs, identity, authorization and business logic.">
+  <meta name="theme-color" content="#090b10">
+  <meta property="og:title" content="CHIQUI_78 — Red Team Security Researcher">
+  <meta property="og:description" content="Authorized vulnerability research, responsible disclosure and curated security intelligence.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chiqui78.es/">
+  <title>CHIQUI_78 — Red Team Security Researcher</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark">C78</span><span>CHIQUI_78</span></a>
+    <nav class="nav">
+      <a data-i18n="nav_about" href="#about">About</a>
+      <a data-i18n="nav_research" href="#research">Research</a>
+      <a data-i18n="nav_intel" href="#intelligence">Intelligence</a>
+      <a data-i18n="nav_disclosure" href="#disclosure">Disclosure</a>
+      <a data-i18n="nav_contact" href="#contact">Contact</a>
+    </nav>
+    <div class="top-actions">
+      <button id="langToggle" class="ghost-btn" type="button">ES</button>
+      <a class="status-pill" href="#contact"><span class="pulse"></span><span data-i18n="available">Available for authorized research</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">INDEPENDENT RED TEAM SECURITY RESEARCHER</p>
+        <h1>Find the assumption.<br><span>Break the assumption.</span><br>Report the impact.</h1>
+        <p class="hero-lead" data-i18n="hero_lead">Authorized vulnerability research across web applications, APIs, authentication, authorization, business logic and complex attack paths.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="https://hackerone.com/chiqui_78?type=user" target="_blank" rel="noreferrer">HackerOne ↗</a>
+          <a class="secondary-btn" href="https://app.pwn.intigriti.rocks/researcher/profile/chiqui78" target="_blank" rel="noreferrer">Intigriti ↗</a>
+          <a class="secondary-btn" href="#contact" data-i18n="contact_me">Contact</a>
+        </div>
+        <div class="trust-row"><span>VDP / BUG BOUNTY</span><span>WEB & API</span><span>AUTHN / AUTHZ</span><span>BUSINESS LOGIC</span><span>RESPONSIBLE DISCLOSURE</span></div>
+      </div>
+
+      <aside class="terminal-card">
+        <div class="terminal-top"><span></span><span></span><span></span><code>research.flow</code></div>
+        <pre><span class="muted">$</span> scope --authorized
+<span class="ok">[OK]</span> program context
+<span class="ok">[OK]</span> attack surface
+<span class="ok">[OK]</span> trust boundaries
+
+<span class="muted">$</span> map --business-logic
+<span class="cyan">→</span> identity
+<span class="cyan">→</span> objects / ownership
+<span class="cyan">→</span> states / transitions
+<span class="cyan">→</span> cross-service trust
+
+<span class="muted">$</span> validate --impact
+<span class="warn">?</span> what does the system assume?
+<span class="warn">?</span> what happens when it fails?
+
+<span class="ok">READY</span> responsible disclosure</pre>
+      </aside>
+    </section>
+
+    <section id="about" class="section shell">
+      <div class="section-kicker">01 / PROFILE</div>
+      <div class="split">
+        <div><h2 data-i18n="about_title">Research with an adversarial mindset, evidence first.</h2></div>
+        <div class="prose">
+          <p data-i18n="about_p1">I am Francisco Javier García Romero, operating publicly as <strong>CHIQUI_78</strong>. I participate in authorized vulnerability disclosure and bug bounty environments, with a focus on understanding how real systems fail across technical and business boundaries.</p>
+          <p data-i18n="about_p2">My work prioritises reproducibility, measurable impact and responsible disclosure. The goal is not simply to identify an endpoint or a misconfiguration, but to understand the assumption behind it and validate whether it can become a meaningful attack path.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section shell">
+      <div class="section-kicker">02 / RESEARCH</div>
+      <div class="section-head">
+        <h2 data-i18n="focus_title">Primary research areas</h2>
+        <p data-i18n="focus_intro">A practical focus on surfaces where trust, identity and application state intersect.</p>
+      </div>
+
+      <div class="focus-grid">
+        <article class="focus-card"><span>01</span><h3>Web Applications</h3><p data-i18n="focus_web">Attack surface mapping, workflow analysis and exploitability validation.</p></article>
+        <article class="focus-card"><span>02</span><h3>API Security</h3><p data-i18n="focus_api">Object boundaries, undocumented behaviour, state and authorization controls.</p></article>
+        <article class="focus-card"><span>03</span><h3>Identity & SSO</h3><p data-i18n="focus_identity">Authentication flows, OIDC/OAuth boundaries, session transitions and trust.</p></article>
+        <article class="focus-card"><span>04</span><h3>Authorization</h3><p data-i18n="focus_authz">Horizontal and vertical access-control hypotheses and ownership validation.</p></article>
+        <article class="focus-card"><span>05</span><h3>Business Logic</h3><p data-i18n="focus_logic">Impossible states, workflow abuse, race conditions and broken assumptions.</p></article>
+        <article class="focus-card"><span>06</span><h3>AI-assisted Research</h3><p data-i18n="focus_ai">Using modern AI systems to accelerate analysis while keeping findings reproducible and evidence-driven.</p></article>
+      </div>
+
+      <div class="method">
+        <div class="method-step"><b>RECON</b><span data-i18n="m1">Observe the real application</span></div><div class="method-arrow">→</div>
+        <div class="method-step"><b>MODEL</b><span data-i18n="m2">Map objects & trust</span></div><div class="method-arrow">→</div>
+        <div class="method-step"><b>HYPOTHESIS</b><span data-i18n="m3">Challenge assumptions</span></div><div class="method-arrow">→</div>
+        <div class="method-step"><b>VALIDATE</b><span data-i18n="m4">Prove impact</span></div><div class="method-arrow">→</div>
+        <div class="method-step"><b>DISCLOSE</b><span data-i18n="m5">Report responsibly</span></div>
+      </div>
+    </section>
+
+    <section id="intelligence" class="section shell">
+      <div class="section-kicker">03 / SECURITY INTELLIGENCE</div>
+      <div class="section-head reports-head">
+        <div>
+          <h2 data-i18n="intel_title">Reports worth reading</h2>
+          <p data-i18n="intel_intro">A curated feed of high-signal security research from primary sources. Selected for relevance to real-world attack paths and vulnerability research.</p>
+        </div>
+        <div class="updated"><span class="pulse"></span><span data-i18n="curated">Curated Sep 2026</span></div>
+      </div>
+      <div id="reportsGrid" class="reports-grid"></div>
+      <p class="source-note" data-i18n="source_note">External links point to the original publishers. Summaries are editorial notes, not reproductions of the reports.</p>
+    </section>
+
+    <section id="disclosure" class="section shell">
+      <div class="section-kicker">04 / RESPONSIBLE DISCLOSURE</div>
+      <div class="split">
+        <div><h2 data-i18n="disclosure_title">Evidence, coordination, then publication.</h2></div>
+        <div class="prose">
+          <p data-i18n="disclosure_p1">Security findings are handled through the applicable VDP, bug bounty or coordinated-disclosure process. Technical write-ups are published only when disclosure conditions allow it.</p>
+          <ul class="clean-list">
+            <li data-i18n="d1">No publication of confidential program or customer data.</li>
+            <li data-i18n="d2">Reproduction steps are documented with the minimum data required to prove impact.</li>
+            <li data-i18n="d3">Vendor remediation and disclosure timelines are respected.</li>
+            <li data-i18n="d4">Public write-ups focus on lessons, root cause and defensive value.</li>
+          </ul>
+          <div class="notice"><strong data-i18n="disclosures_label">Public disclosures</strong><span data-i18n="disclosures_text">Selected write-ups will appear here after coordinated disclosure is complete.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="profiles" class="section shell">
+      <div class="section-kicker">05 / VERIFIED PRESENCE</div>
+      <div class="profile-grid">
+        <a class="profile-card" href="https://hackerone.com/chiqui_78?type=user" target="_blank" rel="noreferrer"><div><small>HACKERONE</small><h3>chiqui_78</h3></div><span>↗</span></a>
+        <a class="profile-card" href="https://app.pwn.intigriti.rocks/researcher/profile/chiqui78" target="_blank" rel="noreferrer"><div><small>INTIGRITI</small><h3>chiqui78</h3></div><span>↗</span></a>
+        <div class="profile-card static"><div><small>DOMAIN</small><h3>chiqui78.es</h3></div><span class="verified-dot">●</span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="shell contact-inner">
+        <div><div class="section-kicker">06 / CONTACT</div><h2 data-i18n="contact_title">Security research, collaboration and verified program invitations.</h2></div>
+        <div class="contact-stack">
+          <button class="email-row copy-email" data-email="security@chiqui78.es"><span><small>SECURITY</small>security@chiqui78.es</span><b data-i18n="copy">COPY</b></button>
+          <button class="email-row copy-email" data-email="research@chiqui78.es"><span><small>RESEARCH</small>research@chiqui78.es</span><b data-i18n="copy">COPY</b></button>
+          <button class="email-row copy-email" data-email="francisco@chiqui78.es"><span><small>DIRECT</small>francisco@chiqui78.es</span><b data-i18n="copy">COPY</b></button>
+          <div class="pgp-row"><span><small>PGP</small><span data-i18n="pgp_pending">Public key will be published here after generation.</span></span><b>PENDING</b></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <span>© 2026 CHIQUI_78</span><span data-i18n="footer">Independent security research · Responsible disclosure first</span><a href="/.well-known/security.txt">security.txt</a>
+  </footer>
+
+  <script src="data/reports.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
